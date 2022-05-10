@@ -1,0 +1,43 @@
+body {
+    text-align:center;
+}
+.caixa__cabecalho {
+    grid-column: 2;
+    text-align:center;
+    width:350px;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    margin: 0 auto;
+}
+.imagem__cabecalho {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+}
+
+
+ul, ol {
+    width:300px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid #000000;
+    border-radius:10px;
+}
+ul li {
+    padding:10px;
+}
+
+ol li {
+    padding:10px;
+}
+
+ol {
+    margin-top: 3em;
+}
