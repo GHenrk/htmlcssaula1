@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header>
+        <h1>Formulários</h1>
+        <a href="index.html">HOME</a>
+    </header> 
+    <main>
+        <div class="caixa_formulario">
+            <form>
+                <div class="caixa2">
+                    <h3 class="titulo__formulario">Efetue seu cadastro</h3>
+                    <label for="nome1">Primeiro Nome:</label><br>
+                    <input type="text" name="nome1" placeholder="Gustavo" class="input_name"><br>
+                    <label for="nome2">Sobrenome:</label><br>
+                    <input type="text" name="nome2" class="input_name" placeholder="Henrique"><br>  
+                </div>
+                
+                <!-- Radio Button -->
+                <fieldset>
+                    <h3>Como está o clima hoje?</h3>
+                    <input type="radio" name="clima" value="Sol" checked><label for="Sol">Sol</label><br> 
+                    <input type="radio" name="clima" value="Nublado"><label for="Nublado">Nublado</label><br>
+                    <input type="radio" name="clima" value="Chuva"><label for="Chuva">Chuva</label><br>
+                    <input type="radio" name="clima" value="Tempestade"><label for="Tempestade">Tempestade</label><br>  
+                </fieldset>  
+                <fieldset>
+                    <h3>O que você achou do site?</h3>
+                    <input type="radio" name="site" value="Muito Bom" checked="">Muito Bom<br>
+                    <input type="radio" name="site" value="Bom">Bom<br>
+                    <input type="radio" name="site" value="Ruim">Ruim<br>
+                    <input type="radio" name="site" value="Péssimo">Péssimo<br>
+                </fieldset>    
+                
+                <div class="secao1">
+                    <label for="secao">Qual Seção você mais gostou?</label>
+                    <select name="secao" id="secao1">
+                    <option value="Aparencia">Aparencia</option>
+                    <option value="Funcionalidade">Funcionalidade</option>
+                    <option value="Rapidez">Rapidez</option>
+                    <option value="Estabilidade">Estabilidade</option>
+                    </select><br>
+                    <label for="outra">Outra:</label>
+                    <input type="text" name="outra">
+                </div> 
+                <label for="chuva">Hoje está chovendo?</label>
+                <input type="checkbox" name="chuva">
+
+                <input type="reset" value="Limpar" class="btn_form">
+                <input type="submit" name="enviar" value="Enviar" class="btn_form">
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>

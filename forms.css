@@ -1,0 +1,44 @@
+header {
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width:940px;
+    margin: 0 auto;
+}
+.caixa2 h3 {
+    text-align: center;
+}
+.caixa2 {
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;
+}
+
+form { 
+    margin: 0 auto;
+}
+
+.btn_form {
+    width:25%;
+    margin:10px 0 10px 35px;
+    text-align: center;
+}
+
+fieldset {
+    margin-top:1.5em;
+}
+
+.input_name {
+    padding:0.5em;
+}
+
+.secao1 {
+    margin:0.5em 0px;
+    display: block;
+}
