@@ -1,2 +1,3 @@
-# htmlcssaula1
-Aula de HTML E CSS
+# HTML E CSS - ENTRA21
+
+Repositório criado para guardar o conteúdo da aula de HTML e CSS do programa entra21.
