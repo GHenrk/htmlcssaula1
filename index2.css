@@ -1,0 +1,9 @@
+.rodape_pagina {
+    margin:0;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    background-color:#696969;
+    padding:2em;
+    text-align:center;
+}

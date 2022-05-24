@@ -1,0 +1,71 @@
+body {
+    background-color:#cccccc;
+    margin:0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #A9A9A9;
+}
+
+h1 {
+    padding: 0.5em;
+    margin: 0;
+}
+nav a {
+    text-decoration: none;
+    padding:1em;
+    display: inline-block;
+    font-size: 25px;
+    background-color: #DCDCDC;
+    transition: 0.5s;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+    background-color:#ffffff;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 0em;
+}
+
+.pulse {
+    animation: pulse 0.7s infinite;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+  }
+  
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+    
+    }
+    100% {
+      -webkit-transform: scale(1.2);
+      
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      
+    }
+    100% {
+      transform: scale(1.1);
+      color:red;
+    }
+  }
+
+.rodape_pagina {
+    margin:2em 0 0 0;
+    position:relative;
+    width: 100%;
+    bottom: 0;
+    background-color:#696969;
+    padding:1em;
+    text-align:center;
+}

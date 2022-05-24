@@ -33,5 +33,7 @@ td {
 
 table {
     width: 50%;
-    margin: 15px auto;
+    margin: 15px auto 60px auto;
+    box-sizing: border-box;
 }
+

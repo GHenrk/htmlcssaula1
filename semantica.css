@@ -1,6 +1,5 @@
 body {
-    background:linear-gradient(0deg, #696969 , #F5F5F5);
-    background-repeat: no-repeat;
+   margin:0;
 }
 .cabecalho {
     background-color:#CCCCCC;
@@ -91,6 +90,10 @@ a {
 
 
 .rodape_pagina {
+    margin:0;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
     background-color:#696969;
     padding:2em;
     text-align:center;
