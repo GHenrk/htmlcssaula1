@@ -1,0 +1,81 @@
+header {
+    width: 100%;
+    background-color: #304D6D;
+}
+
+body {
+    background-color: #82A0BC;
+}
+.titulo__principal {
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+.item__link--imagem {
+    width: 40px;
+    padding: 5px 20px;
+    
+}
+
+.container_cabecalho {
+    width:1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.menu__lateral--item {
+    display: inline-block;
+}
+
+.container {
+    width:1024px;
+    margin: 1.5rem auto;
+}
+
+.conteudo__principal {
+    box-sizing: border-box;
+    background-color:#A7CCED;
+    height:200px;    
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    padding: 1em;
+    box-shadow: 10px 10px 30px black;
+}
+
+.imagem__principal {
+    width:180px;
+    border-radius:50%;
+    box-shadow: 10px 10px 30px #63ADF2;
+    
+
+}
+.texto__descricao {
+    line-height: 2em;
+    text-align:center;
+    margin-left: 0em;
+    padding:0 2em;
+}
+
+.texto__descricao--destaque {
+    font-style: italic;
+    color:#304D6D;
+    text-align: center;
+
+}
+
+.conteudo__principal--texto {
+    background-color: rgba(224,255,255,0.3);
+    border-radius: 15px;
+    padding:0.5em;
+}
+.conteudo__principal--texto::before{
+    content:'';
+    background-image: url("https://img.freepik.com/fotos-gratis/parede-de-concreto_53876-88973.jpg?t=st=1653956714~exp=1653957314~hmac=28c235e9530232d181a58b0188228d9399936e9d91edac25c6d374f128f79064&w=1380"); 
+
+}
