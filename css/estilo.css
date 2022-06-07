@@ -5,6 +5,7 @@ header {
 
 body {
     background-color: #82A0BC;
+    font-size: 19px;
 }
 .titulo__principal {
     font-family: 'Lobster', cursive;
@@ -24,7 +25,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    box-sizing: border-box;
 }
 
 .menu__lateral--item {
@@ -38,17 +38,18 @@ body {
 
 .conteudo__principal {
     box-sizing: border-box;
-    background-color:#A7CCED;
-    height:200px;    
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
+    background-color:#A7CCED;   
+    display:grid;
+    grid-template-columns: 25% 1fr;
+    justify-content: center;
     border-radius: 15px;
     padding: 1em;
-    box-shadow: 10px 10px 30px black;
+    box-shadow: 10px 10px 30px #000000;
+    overflow: hidden;
 }
 
 .imagem__principal {
+    margin: 0 auto;
     width:180px;
     border-radius:50%;
     box-shadow: 10px 10px 30px #63ADF2;
@@ -56,26 +57,114 @@ body {
 
 }
 .texto__descricao {
-    line-height: 2em;
+    padding-top: 0.4em;
+    grid-column: 2;
+    line-height: 1.8em;
     text-align:center;
-    margin-left: 0em;
-    padding:0 2em;
 }
 
 .texto__descricao--destaque {
     font-style: italic;
-    color:#304D6D;
+    color:#1a72cf;
     text-align: center;
+    text-shadow: 5px 5px 10px #63ADF2;
 
 }
 
 .conteudo__principal--texto {
     background-color: rgba(224,255,255,0.3);
     border-radius: 15px;
-    padding:0.5em;
+    box-sizing: border-box;
 }
-.conteudo__principal--texto::before{
-    content:'';
-    background-image: url("https://img.freepik.com/fotos-gratis/parede-de-concreto_53876-88973.jpg?t=st=1653956714~exp=1653957314~hmac=28c235e9530232d181a58b0188228d9399936e9d91edac25c6d374f128f79064&w=1380"); 
+
+.conteudo__lateral--hobby {
+    grid-column: 1;
+    text-align: center;
+    margin-top: 2em;
+    background-color: rgba(224,255,255,0.3);
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 
 }
+
+.titulo__lateral, .titulo__centro {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+    padding:0.5em 0 0.2em 0;
+}
+
+.subtitulo__lateral {
+    padding:0.2em;
+}
+
+
+.lista__fotos--imagem {
+    width: 150px;
+    border:5px solid #304D6D;
+    border-radius: 15px;
+    margin: 0.2em 0;
+    opacity: 0.8;
+}
+
+.lista__fotos--imagem:hover{
+    width:90%;
+    opacity: 1;
+}
+
+.projetos__criados {
+    grid-column: 2;
+    margin: 2em 1em;
+    background-color: rgba(224,255,255,0.3);
+    border-radius: 15px;
+    box-sizing: border-box;
+
+}
+
+.titulo__centro {
+    text-align:center;
+}
+
+.card__projetos {
+    background-color: #A7CCED;
+    text-align:center;
+    width:90%;
+    margin: 0.5em auto;
+    border-radius: 15px;
+    padding: 1em 0;
+}
+
+.card__titulo {
+    font-size: 1.2em;
+    padding: 0.2em
+}
+
+.card__descricao {
+    padding: 0.5em 2em;
+
+}
+
+.card__janela {
+    width:80%;
+    border-radius: 15px;
+}
+
+
+@media screen and (max-width:480px) {
+    .container_cabecalho {
+        width:100%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .titulo__principal {
+        font-size:1.5em;
+        padding:0.5em;
+    }
+    .item__link--imagem {
+        width:1.8em;
+    }
+ }
